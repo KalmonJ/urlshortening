@@ -67,6 +67,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "bg-shorten": "url('/images/bg-shorten-desktop.svg')",
+        "bg-boost-mobile": "url('/images/bg-boost-mobile.svg')",
       },
       animation: {
         "translate-in": "translate-in 1s ease-in-out",

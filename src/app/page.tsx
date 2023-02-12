@@ -90,7 +90,7 @@ export default function Home() {
           className="absolute animate-translate-in w-[400px] lg:w-[600px] top-0 right-[-100px]"
         />
       </div>
-      <div className="bg-[#EFF1F5] justify-end flex-col flex items-center h-[140vh] relative">
+      <div className="bg-[#EFF1F5] justify-end flex-col flex items-center h-[180vh] lg:h-[100vh] relative">
         <div className="bg-bg-shorten flex-col lg:flex-row mb-8 absolute animate-tanslate-left-input top-[-70px] z-10 w-[70%] flex gap-5 justify-between rounded-md bg-cover p-11 bg-no-repeat bg-dark-violet">
           <input
             className="w-full px-5 font-medium h-16 rounded-md text-xl placeholder:text-lg"
@@ -109,21 +109,27 @@ export default function Home() {
           </Button>
         </div>
 
-        <div className="h-[ful%] md:h-[80%] lg:h-[90%] items-center flex flex-col p-8 w-full">
+        <div className="h-[80%] md:h-[80%] lg:h-[90%] items-center flex flex-col p-8 w-full">
           <ShortlyCardList links={links} />
-          <div className="h-full flex flex-col">
-            <div className="mb-[68px]">
-              <h3 className="text-very-dark-violet text-center text-[22px] mb-[18px]">
-                Advanced statistics
-              </h3>
-              <p className="text-[12px] text-center text-text">
-                Track how your links are performing across the web with our
-                advanced statistics
-              </p>
-            </div>
+          <div className="mb-[68px]">
+            <h3 className="text-very-dark-violet font-bold text-center text-[22px] mb-[18px]">
+              Advanced statistics
+            </h3>
+            <p className="text-[12px] lg:text-[16px] text-center text-text">
+              Track how your links are performing across the web with{" "}
+              <br className="hidden lg:block" /> our advanced statistics
+            </p>
+          </div>
+          <div className="h-full lg: justify-center flex item flex-col">
             <CardList />
           </div>
         </div>
+      </div>
+      <div className="bg-bg-boost-mobile bg-no-repeat gap-6 flex items-center justify-center flex-col bg-cover bg-dark-violet h-[350px] w-full">
+        <h4 className="text-white font-bold text-[22px]">
+          Boost your links today
+        </h4>
+        <Button variant="solid">Get Started</Button>
       </div>
       {/* <svg id="progress" width="100" height="100" viewBox="0 0 100 100">
         <circle cx="50" cy="50" r="30" className="bg" />

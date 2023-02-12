@@ -15,6 +15,10 @@ circle {
   fill: none;
 }
 
+.cardList > div:first-of-type > .custom::before {
+  display: none;
+}
+
 .bg {
   stroke: crimson;
   opacity: 0.3;
